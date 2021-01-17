@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<!-- saved from url=(0136)https://sci-hub.tw/https://pennstate.pure.elsevier.com/en/publications/defending-return-oriented-programming-based-on-virtualization-tec -->
+<html lang="en" class="nexus-font-support"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>
+        Defending return-oriented programming based on virtualization techniques
+     — Penn State </title>
+<link rel="stylesheet" href="./Defending return-oriented programming based on virtualization techniques — Penn State_files/application-bc42535118f8cd6d116f4324fc9da0f3.css">
+<link href="./Defending return-oriented programming based on virtualization techniques — Penn State_files/saved_resource" rel="stylesheet">
+<script async="" src="./Defending return-oriented programming based on virtualization techniques — Penn State_files/analytics.js.download"></script><script src="./Defending return-oriented programming based on virtualization techniques — Penn State_files/saved_resource(1)" type="text/javascript"></script><script type="text/javascript" src="./Defending return-oriented programming based on virtualization techniques — Penn State_files/application-e1466d9c9e09817dc4a565997e8a638f.js.download"></script><!--[if lt IE 9]>
+    <script type="text/javascript" src="https://sci-hub.tw/https://pennstate.pure.elsevier.com/assets/html5shiv.min-2536f8ce6b48e154746d17e7c5c46694.js" ></script>
+    <script type="text/javascript" src="https://sci-hub.tw/https://pennstate.pure.elsevier.com/assets/respond.min-df17f4665472bc6aae284663eaabde24.js" ></script>
+    <![endif]--><meta name="citation_title" content="Defending return-oriented programming based on virtualization techniques">
+<meta name="citation_author" content="Xiaoqi Jia">
+<meta name="citation_author_institution" content="Chinese Academy of Sciences">
+<meta name="citation_author" content="Rui Wang">
+<meta name="citation_author_institution" content="Chinese Academy of Sciences">
+<meta name="citation_author" content="Jun Jiang">
+<meta name="citation_author_institution" content="CAS - Institute of Software">
+<meta name="citation_author" content="Shengzhi Zhang">
+<meta name="citation_author_institution" content="Pennsylvania State University">
+<meta name="citation_author" content="Peng Liu">
+<meta name="citation_author_institution" content="Institute for CyberScience (ICS)">
+<meta name="citation_author_institution" content="College of Information Sciences and Technology">
+<meta name="citation_author_email" content="PXL20@psu.edu">
+<meta name="citation_publication_date" content="2013/01/01">
+<meta name="citation_online_date" content="2017/01/11">
+<meta name="citation_doi" content="10.1002/sec.693">
+<meta name="citation_language" content="English (US)">
+<meta name="citation_journal_title" content="Security and Communication Networks">
+<meta name="citation_issn" content="1939-0114">
+<meta name="citation_publisher" content="John Wiley and Sons Inc.">
+<meta name="citation_volume" content="6">
+<meta name="citation_issue" content="10">
+<meta name="citation_firstpage" content="1236">
+<meta name="citation_lastpage" content="1249">
+<script type="text/javascript">
+try {(function() {
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-117927536-1', 'auto');ga('set', 'anonymizeIp', true);ga('send', 'pageview');})();} catch(e) {if(console) { console.log(e) } }</script><script src="./Defending return-oriented programming based on virtualization techniques — Penn State_files/satelliteLib-73365a77d94610f247ea9321b7b9244624d0e343.js.download"></script><link href="./Defending return-oriented programming based on virtualization techniques — Penn State_files/panel.css" rel="stylesheet" type="text/css">
+<script src="./Defending return-oriented programming based on virtualization techniques — Penn State_files/domready.js.download"></script><script src="./Defending return-oriented programming based on virtualization techniques — Penn State_files/panel.js.download"></script>
+</head>
+<body class="webkit">
+<a href="https://sci-hub.tw/https://pennstate.pure.elsevier.com/en/publications/defending-return-oriented-programming-based-on-virtualization-tec/#page-content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+
+
+
+
+        <header id="page-header"><div class="primary  ">
+                <div class="container">
+                    
+                    <a href="https://sci-hub.tw/https://pennstate.pure.elsevier.com/en/" class="logo">
+                        
+                            <img src="./Defending return-oriented programming based on virtualization techniques — Penn State_files/saved_resource(2)" alt="Penn State  Logo"></a>
+                    
+                        <ul class="header-tools ">
+<li class="help-and-faq">
+                                    <a href="https://sci-hub.tw/https://research.med.psu.edu/pure-help/" target="_blank">
+                                        <i class="icon icon-lifebuoy"></i>
+                                        <span class="label">Help &amp; FAQ</span>
+                                    </a>
+                                </li>
+                            
+                            
+                        </ul>
+</div>
+            </div>
+            
+            
+                <div class="subMenu">
+                    <div class="secondary">
+                        <div class="container">
+                            <nav class="content-navigation three-third" role="navigation"><ul class="has-overflow-navigation">
+<li class="">
+                                        <a href="https://sci-hub.tw/https://pennstate.pure.elsevier.com/en/">Home</a>
+                                    </li>
+
+                                    
+                                        <li class="">
+                                            <a class="portal_link" href="https://sci-hub.tw/https://pennstate.pure.elsevier.com/en/persons/"><span>Researchers</span></a>
+                                        </li>
+                                    
+                                        <li class="selected">
+                                            <a class="portal_link" href="https://sci-hub.tw/https://pennstate.pure.elsevier.com/en/publications/"><span>Research Output</span></a>
+                                        </li>
+                                    
+                                        <li class="">
+                                            <a class="portal_link" href="https://sci-hub.tw/https://pennstate.pure.elsevier.com/en/organisations/"><span>Research Units</span></a>
+                                        </li>
+                                    
+                                        <li class="">
+                                            <a class="portal_link" href="https://sci-hub.tw/https://pennstate.pure.elsevier.com/en/equipments/"><span>Core Facilities</span></a>
+                                        </li>
+                                    
+                                        <li class="">
+                                            <a class="portal_link" href="https://sci-hub.tw/https://pennstate.pure.elsevier.com/en/projects/"><span>NIH Grants</span></a>
+                                        </li>
+                                    
+                                        <li class="">
+                                            <a class="portal_link" href="https://sci-hub.tw/https://pennstate.pure.elsevier.com/en/prizes/"><span>Prizes</span></a>
+                                        </li>
+                                    
+                                        
+                                    
+                                <li class="dropdown" style="position: relative;"><a class="dropdown-toggle" data-toggle="dropdown" href="https://sci-hub.tw/https://pennstate.pure.elsevier.com/en/publications/defending-return-oriented-programming-based-on-virtualization-tec#" aria-label="Toggle navigation"><i class="icon icon-dots"><span class="count increment-counter">0</span></i><span class="label">undefined</span></a><div class="dropdown-container" aria-expanded="false"><ul class="dropdown-menu"><li class="">
+                                            <a class="portal_link" href="https://sci-hub.tw/https://pennstate.pure.elsevier.com/en/activities/"><span>Activities</span></a>
+                                        </li></ul></div></li></ul></nav><div class="header-search">
+                                    
+<form action="https://sci-hub.tw/https://pennstate.pure.elsevier.com/en/searchAll/index/defending-return-oriented-programming-based-on-virtualization-tec" method="get" class="search-form" id="search-everything">
+
+    <div class="global-search-wrapper">
+        <div class="global-search mini">
+            <div class="field-button-wrapper">
+                <div class="search-cell search-field">
+                    <input class="search-field" aria-label="Search by expertise, name or affiliation" value="" name="search" placeholder="Search by expertise, name or affiliation">
+</div>
+
+                <div class="search-cell search-submit">
+                    <button type="submit" aria-label="Search">
+                        <i class="icon icon-magnifying-glass"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+<script>
+    $(function () {
+        var searchForm = $("#search-everything");
+        var searchField = $(".search-field", searchForm);
+        searchForm.on("submit", function () {
+            var field = searchField.find("input");
+            var searchString = field.val();
+
+            // No enter key submit nothing :-)
+            if (!searchString) return false;
+
+            if (searchString.length >= 200) {
+                searchForm.attr("method", "post");
+                searchForm.attr("action", "/en/concepts/copypaste/");
+                field.attr("name", "text");
+            }
+        });
+    });
+</script>
+</div>
+                            
+                        </div>
+                    </div>
+                </div>
+            
+            
+
+
+
+        </header><main id="page-content" role="main"><div class="page-section page-section-publications page-section-publications-view ">
+                <div class="page-section-header page-section-header-publications page-section-header-publications-view " data-stickyheader="">
+                    
+        
+        
+        <div class="container">
+            <div class="row">
+                <div class="introduction ">
+                    <h1>Defending return-oriented programming based on virtualization techniques</h1>
+                    <div class="rendering rendering_researchoutput  rendering_researchoutput_associatespersonsclassifiedportal rendering_contributiontojournal rendering_associatespersonsclassifiedportal rendering_contributiontojournal_associatespersonsclassifiedportal"><p class="relations persons">Xiaoqi Jia, Rui Wang, Jun Jiang, Shengzhi Zhang, <a rel="Person" href="https://sci-hub.tw/https://pennstate.pure.elsevier.com/en/persons/peng-liu" class="link person"><span>Peng Liu</span></a></p></div>
+                    <div class="rendering rendering_researchoutput  rendering_researchoutput_associatesorganisationsportal rendering_contributiontojournal rendering_associatesorganisationsportal rendering_contributiontojournal_associatesorganisationsportal"><ul class="relations organisations">
+<li class="institute"><a rel="Organisation" href="https://sci-hub.tw/https://pennstate.pure.elsevier.com/en/organisations/institute-for-cyberscience-ics" class="link"><span>Institute for CyberScience (ICS)</span></a></li>
+<li class="college"><a rel="Organisation" href="https://sci-hub.tw/https://pennstate.pure.elsevier.com/en/organisations/college-of-information-sciences-and-technology" class="link"><span>College of Information Sciences and Technology</span></a></li>
+</ul></div>
+                    <div class="rendering rendering_researchoutput  rendering_researchoutput_publicationcontenttyperendererportalng rendering_contributiontojournal rendering_publicationcontenttyperendererportalng rendering_contributiontojournal_publicationcontenttyperendererportalng"><p class="type"><span class="type_family">Research output<span class="type_family_sep">: </span></span><span class="type_classification_parent">Contribution to journal<span class="type_parent_sep"> › </span></span><span class="type_classification">Article</span></p></div>
+                </div>
+
+                
+                    <div class="metrics">
+                        <ul class="content-statistics">
+<li>
+                                <div class="scopus-citations tooltipped tooltipped-n" aria-label="Source: Scopus">
+                                    <span class="count"><a href="https://sci-hub.tw/http://www.scopus.com/inward/citedby.url?scp=84884717431&amp;partnerID=8YFLogxK" class="scopus-citations" target="_blank">4</a></span>
+                                    <span class="label">Citations</span>
+                                </div>
+                            </li>
+                        
+                            
+                         <li>
+                                    <div class="metric-details">
+                                
+                                    <a href="https://sci-hub.tw/https://plu.mx/plum/a/?doi=10.1002/sec.693" class="plumx-plum-print-popup" data-popup="left" data-hide-when-empty="true" data-site="plum" data-badge="false"></a>
+                                
+
+                            
+                            
+                            <div data-badge-popover="top" data-badge-type="donut" data-doi="10.1002/sec.693" data-hide-no-mentions="true" class="altmetric-embed"></div>
+                            
+                        
+
+                        
+                    </div>
+                
+
+            </li>
+</ul>
+</div>
+
+        </div>
+    
+                </div>
+                <div class="page-section-content page-section-content-publications page-section-content-publications-view  ">
+                    
+        <div class="container">
+            <div class="clearfix">
+                <div class="content-content publication-content">
+                    
+                        <h3 class="subheader">Abstract</h3>
+                    <div class="rendering rendering_researchoutput  rendering_researchoutput_abstractportal rendering_contributiontojournal rendering_abstractportal rendering_contributiontojournal_abstractportal"><div class="textblock"><p>Over the past few years, return-oriented programming (ROP) has drawn great attention of both academia and industry. Because of its Turing completeness, ROP reuses short instruction sequences already present in the victim program's address space to perform arbitrary computation. Hence, it can successfully bypass state-of-the-art code integrity check mechanisms. In this paper, we look into using virtualization technologies to defeat return-oriented programming. We design and implement HyperCropII, a virtualization-based automatic runtime approach to defend such attacks. ROP attackers extract short instruction sequences ending in ret called "gadgets" and craft stack content to "chain" these gadgets together. We observe that a key characteristic of ROP is to fill the stack with plenty of addresses that are within the range of the program's libraries. Accordingly, we inspect the content of the stack to see if a potential ROP attack exists and quarantine the damages for further security purposes. We have implemented a proof-of-concept system based on the open source Xen hypervisor. The evaluation results exhibit that our solution is effective and efficient.</p></div></div>
+                    <div class="rendering rendering_researchoutput  rendering_researchoutput_detailsportal rendering_contributiontojournal rendering_detailsportal rendering_contributiontojournal_detailsportal"><div class="article"><table class="properties"><tbody>
+<tr class="language">
+<th>Language</th>
+<td>English (US)</td>
+</tr>
+<tr>
+<th>Pages</th>
+<td>1236-1249</td>
+</tr>
+<tr class="numberofpages">
+<th>Number of pages</th>
+<td>14</td>
+</tr>
+<tr>
+<th>Journal</th>
+<td><a rel="Journal" href="https://sci-hub.tw/https://pennstate.pure.elsevier.com/en/publications/defending-return-oriented-programming-based-on-virtualization-tec/#" class="link"><span>Security and Communication Networks</span></a></td>
+</tr>
+<tr>
+<th>Volume</th>
+<td>6</td>
+</tr>
+<tr>
+<th>Issue number</th>
+<td>10</td>
+</tr>
+<tr class="digital_object_identifiers">
+<th>DOIs</th>
+<td><ul class="relations digital_object_identifiers"><li>
+<a onclick="window.open(this.href); return false;" href="https://sci-hub.tw/https://doi.org/10.1002/sec.693" class="link"><span>10.1002/sec.693</span></a> </li></ul></td>
+</tr>
+<tr class="status">
+<th>State</th>
+<td>
+<span class="prefix">Published - </span><span class="date">Jan 1 2013</span>
+</td>
+</tr>
+</tbody></table></div></div>
+                    
+                        <div class="content-fingerprint">
+                            <h3>Fingerprint</h3>
+                            
+                                <div tabindex="0" class="concept-badge-small tooltipped tooltipped-multiline tooltipped-e" aria-label="Weight: 100%
+            Engineering &amp; Materials Science" data-concept-uuid="60980d70-ffa6-44a4-9aff-6a908b24cd5e" data-rank-value="1.0" data-summary-url="/en/concepts/summary/" style="position: relative;">
+    <div class="concept-wrapper">
+        <span class="rank"><canvas width="16" height="16"></canvas></span>
+        <span class="concept">Computer programming</span>
+    </div>
+</div>
+                            
+                                <div tabindex="0" class="concept-badge-small tooltipped tooltipped-multiline tooltipped-e" aria-label="Weight: 20%
+            Engineering &amp; Materials Science" data-concept-uuid="49cad62b-32a5-48a3-a542-efa609cbfa24" data-rank-value="0.20824963375645242" data-summary-url="/en/concepts/summary/" style="position: relative;">
+    <div class="concept-wrapper">
+        <span class="rank"><canvas width="16" height="16"></canvas></span>
+        <span class="concept">Industry</span>
+    </div>
+</div>
+                            
+                                <div tabindex="0" class="concept-badge-small tooltipped tooltipped-multiline tooltipped-e" aria-label="Weight: 14%
+            Engineering &amp; Materials Science" data-concept-uuid="d6efca38-2b0f-4e82-940c-e417ac361baf" data-rank-value="0.14374460228102123" data-summary-url="/en/concepts/summary/" style="position: relative;">
+    <div class="concept-wrapper">
+        <span class="rank"><canvas width="16" height="16"></canvas></span>
+        <span class="concept">Virtualization</span>
+    </div>
+</div>
+                            
+                        </div>
+                    
+                    
+
+
+                    <div class="rendering rendering_keywordable rendering_expertkeywordgrouspbytypeportal rendering_keywordable_expertkeywordgrouspbytypeportal"><div class="keyword-group">
+<h3 class="subheader">All Science Journal Classification (ASJC) codes</h3>
+<ul class="relations keywords">
+<li>Information Systems</li>
+<li>Computer Networks and Communications</li>
+</ul>
+</div></div>
+                    <div class="publication-cite">
+    <h3>Cite this</h3>
+    <ul class="tabs has-overflow-navigation">
+<li class="selected">
+                <a href="https://sci-hub.tw/https://pennstate.pure.elsevier.com/en/publications/defending-return-oriented-programming-based-on-virtualization-tec/#cite-apa" class="apa">Apa</a>
+            </li>
+        
+            <li class="">
+                <a href="https://sci-hub.tw/https://pennstate.pure.elsevier.com/en/publications/defending-return-oriented-programming-based-on-virtualization-tec/#cite-author" class="author">Author</a>
+            </li>
+        
+            <li class="">
+                <a href="https://sci-hub.tw/https://pennstate.pure.elsevier.com/en/publications/defending-return-oriented-programming-based-on-virtualization-tec/#cite-BIBTEX" class="BIBTEX">BIBTEX</a>
+            </li>
+        
+            <li class="">
+                <a href="https://sci-hub.tw/https://pennstate.pure.elsevier.com/en/publications/defending-return-oriented-programming-based-on-virtualization-tec/#cite-harvard" class="harvard">Harvard</a>
+            </li>
+        
+            <li class="">
+                <a href="https://sci-hub.tw/https://pennstate.pure.elsevier.com/en/publications/defending-return-oriented-programming-based-on-virtualization-tec/#cite-standard" class="standard">Standard</a>
+            </li>
+        
+            <li class="">
+                <a href="https://sci-hub.tw/https://pennstate.pure.elsevier.com/en/publications/defending-return-oriented-programming-based-on-virtualization-tec/#cite-RIS" class="RIS">RIS</a>
+            </li>
+        
+            <li class="">
+                <a href="https://sci-hub.tw/https://pennstate.pure.elsevier.com/en/publications/defending-return-oriented-programming-based-on-virtualization-tec/#cite-vancouver" class="vancouver">Vancouver</a>
+            </li>
+        
+    <li class="dropdown" style="display: none; position: relative;"><a class="dropdown-toggle" data-toggle="dropdown" href="https://sci-hub.tw/https://pennstate.pure.elsevier.com/en/publications/defending-return-oriented-programming-based-on-virtualization-tec#" aria-label="Toggle navigation"><i class="icon icon-dots"><span class="count increment-counter">0</span></i><span class="label">undefined</span></a><div class="dropdown-container" aria-expanded="false"><ul class="dropdown-menu"></ul></div></li></ul>
+<div class="tab-container">
+        
+            <div id="cite-apa" class="tab selected">
+                <div class="rendering rendering_researchoutput  rendering_researchoutput_apa rendering_contributiontojournal rendering_apa rendering_contributiontojournal_apa">Jia, X., Wang, R., Jiang, J., Zhang, S.<span>, &amp; Liu, P.</span> (2013). <span>Defending return-oriented programming based on virtualization techniques</span>. <span><em>Security and Communication Networks</em></span>, <em>6</em>(10), 1236-1249. DOI: <span>10.1002/sec.693</span>
+</div>
+            </div>
+        
+            <div id="cite-author" class="tab " style="display: none;">
+                <div class="rendering rendering_researchoutput  rendering_researchoutput_author rendering_contributiontojournal rendering_author rendering_contributiontojournal_author">Jia, Xiaoqi ; Wang, Rui ; Jiang, Jun ; Zhang, Shengzhi <span> ; Liu, Peng</span>. / <span><strong>Defending return-oriented programming based on virtualization techniques</strong></span>. In: <span>Security and Communication Networks</span>. 2013 ; Vol. 6, No. 10. pp. 1236-1249</div>
+            </div>
+        
+            <div id="cite-BIBTEX" class="tab " style="display: none;">
+                <div class="rendering rendering_researchoutput  rendering_researchoutput_bibtex rendering_contributiontojournal rendering_bibtex rendering_contributiontojournal_bibtex">
+<div>@article{a240a3511370486b87e0e5684228b05e,</div>
+<div>
+  title     = "Defending return-oriented programming based on virtualization techniques",</div>
+<div>
+  abstract  = "Over the past few years, return-oriented programming (ROP) has drawn great attention of both academia and industry. Because of its Turing completeness, ROP reuses short instruction sequences already present in the victim program's address space to perform arbitrary computation. Hence, it can successfully bypass state-of-the-art code integrity check mechanisms. In this paper, we look into using virtualization technologies to defeat return-oriented programming. We design and implement HyperCropII, a virtualization-based automatic runtime approach to defend such attacks. ROP attackers extract short instruction sequences ending in ret called {"}gadgets{"} and craft stack content to {"}chain{"} these gadgets together. We observe that a key characteristic of ROP is to fill the stack with plenty of addresses that are within the range of the program's libraries. Accordingly, we inspect the content of the stack to see if a potential ROP attack exists and quarantine the damages for further security purposes. We have implemented a proof-of-concept system based on the open source Xen hypervisor. The evaluation results exhibit that our solution is effective and efficient.",</div>
+<div>
+  author    = "Xiaoqi Jia and Rui Wang and Jun Jiang and Shengzhi Zhang and Peng Liu",</div>
+<div>
+  year      = "2013",</div>
+<div>
+  month     = "1",</div>
+<div>
+  day       = "1",</div>
+<div>
+  doi       = "10.1002/sec.693",</div>
+<div>
+  language  = "English (US)",</div>
+<div>
+  volume    = "6",</div>
+<div>
+  pages     = "1236--1249",</div>
+<div>
+  journal   = "Security and Communication Networks",</div>
+<div>
+  issn      = "1939-0122",</div>
+<div>
+  publisher = "John Wiley and Sons Inc.",</div>
+<div>
+  number    = "10",</div>
+<p>
+}</p>
+</div>
+            </div>
+        
+            <div id="cite-harvard" class="tab " style="display: none;">
+                <div class="rendering rendering_researchoutput  rendering_researchoutput_harvard rendering_contributiontojournal rendering_harvard rendering_contributiontojournal_harvard">Jia, X, Wang, R, Jiang, J, Zhang, S<span> &amp; Liu, P</span> 2013, '<span>Defending return-oriented programming based on virtualization techniques</span>' <span><em>Security and Communication Networks</em></span>, vol. 6, no. 10, pp. 1236-1249. DOI: <span>10.1002/sec.693</span>
+</div>
+            </div>
+        
+            <div id="cite-standard" class="tab " style="display: none;">
+                <div class="rendering rendering_researchoutput  rendering_researchoutput_standard rendering_contributiontojournal rendering_standard rendering_contributiontojournal_standard">
+<p><span><strong>Defending return-oriented programming based on virtualization techniques.</strong></span> / Jia, Xiaoqi; Wang, Rui; Jiang, Jun; Zhang, Shengzhi<span>; Liu, Peng</span>.</p> In: <span>Security and Communication Networks</span>, Vol. 6, No. 10, 01.01.2013, p. 1236-1249.<p class="type"><span class="type_family">Research output<span class="type_family_sep">: </span></span><span class="type_classification_parent">Contribution to journal<span class="type_parent_sep"> › </span></span><span class="type_classification">Article</span></p>
+</div>
+            </div>
+        
+            <div id="cite-RIS" class="tab " style="display: none;">
+                <div class="rendering rendering_researchoutput  rendering_researchoutput_ris rendering_contributiontojournal rendering_ris rendering_contributiontojournal_ris">
+<p>TY  - JOUR</p>
+<p>T1  - Defending return-oriented programming based on virtualization techniques</p>
+<p>AU  - Jia,Xiaoqi</p>
+<p>AU  - Wang,Rui</p>
+<p>AU  - Jiang,Jun</p>
+<p>AU  - Zhang,Shengzhi</p>
+<p>AU  - Liu,Peng</p>
+<p>PY  - 2013/1/1</p>
+<p>Y1  - 2013/1/1</p>
+<p>N2  - Over the past few years, return-oriented programming (ROP) has drawn great attention of both academia and industry. Because of its Turing completeness, ROP reuses short instruction sequences already present in the victim program's address space to perform arbitrary computation. Hence, it can successfully bypass state-of-the-art code integrity check mechanisms. In this paper, we look into using virtualization technologies to defeat return-oriented programming. We design and implement HyperCropII, a virtualization-based automatic runtime approach to defend such attacks. ROP attackers extract short instruction sequences ending in ret called "gadgets" and craft stack content to "chain" these gadgets together. We observe that a key characteristic of ROP is to fill the stack with plenty of addresses that are within the range of the program's libraries. Accordingly, we inspect the content of the stack to see if a potential ROP attack exists and quarantine the damages for further security purposes. We have implemented a proof-of-concept system based on the open source Xen hypervisor. The evaluation results exhibit that our solution is effective and efficient.</p>
+<p>AB  - Over the past few years, return-oriented programming (ROP) has drawn great attention of both academia and industry. Because of its Turing completeness, ROP reuses short instruction sequences already present in the victim program's address space to perform arbitrary computation. Hence, it can successfully bypass state-of-the-art code integrity check mechanisms. In this paper, we look into using virtualization technologies to defeat return-oriented programming. We design and implement HyperCropII, a virtualization-based automatic runtime approach to defend such attacks. ROP attackers extract short instruction sequences ending in ret called "gadgets" and craft stack content to "chain" these gadgets together. We observe that a key characteristic of ROP is to fill the stack with plenty of addresses that are within the range of the program's libraries. Accordingly, we inspect the content of the stack to see if a potential ROP attack exists and quarantine the damages for further security purposes. We have implemented a proof-of-concept system based on the open source Xen hypervisor. The evaluation results exhibit that our solution is effective and efficient.</p>
+<p>UR  - https://sci-hub.tw/http://www.scopus.com/inward/record.url?scp=84884717431&amp;partnerID=8YFLogxK</p>
+<p>UR  - https://sci-hub.tw/http://www.scopus.com/inward/citedby.url?scp=84884717431&amp;partnerID=8YFLogxK</p>
+<p>U2  - 10.1002/sec.693</p>
+<p>DO  - 10.1002/sec.693</p>
+<p>M3  - Article</p>
+<p>VL  - 6</p>
+<p>SP  - 1236</p>
+<p>EP  - 1249</p>
+<p>JO  - Security and Communication Networks</p>
+<p>T2  - Security and Communication Networks</p>
+<p>JF  - Security and Communication Networks</p>
+<p>SN  - 1939-0122</p>
+<p>IS  - 10</p>
+<p>ER  - </p>
+</div>
+            </div>
+        
+            <div id="cite-vancouver" class="tab " style="display: none;">
+                <div class="rendering rendering_researchoutput  rendering_researchoutput_vancouver rendering_contributiontojournal rendering_vancouver rendering_contributiontojournal_vancouver">Jia X, Wang R, Jiang J, Zhang S<span>, Liu P</span>. <span class="title"><span>Defending return-oriented programming based on virtualization techniques</span></span>. <span>Security and Communication Networks</span>. 2013 Jan 1;6(10):1236-1249. Available from, DOI: <span>10.1002/sec.693</span>
+</div>
+            </div>
+        
+
+        <script>
+            $(function() {
+                $(".tab-container .rendering a:not([href^='https://sci-hub.tw/http://dx.doi.org'])").contents().unwrap();
+            });
+        </script>
+</div>
+</div>
+
+                </div>
+
+                <div class="content-sidebar publication-sidebar">
+                    
+                        <h3>Access to Document</h3>
+                    <div class="rendering rendering_researchoutput  rendering_researchoutput_publicationaccessrenderer rendering_contributiontojournal rendering_publicationaccessrenderer rendering_contributiontojournal_publicationaccessrenderer">
+<ul class="dois"><li><div class="doi"><a onclick="window.open(this.href); return false;" href="https://sci-hub.tw/https://doi.org/10.1002/sec.693" class="link"><span>10.1002/sec.693</span></a></div></li></ul>
+<ul class="links">
+<li><div class="link"><a onclick="window.open(this.href); return false;" href="https://sci-hub.tw/http://www.scopus.com/inward/record.url?scp=84884717431&amp;partnerID=8YFLogxK" class="link"><span>Link to publication in Scopus</span></a></div></li>
+<li><div class="link"><a onclick="window.open(this.href); return false;" href="https://sci-hub.tw/http://www.scopus.com/inward/citedby.url?scp=84884717431&amp;partnerID=8YFLogxK" class="link"><span>Link to citation list in Scopus</span></a></div></li>
+</ul>
+</div>
+
+                    
+
+                    
+
+
+                </div>
+            </div>
+        </div> <script>
+        //gets doi url
+        var doi = $('div.doi').text();
+        if (doi != null) {
+            var xhr = new XMLHttpRequest();
+            var api = "45c5f8f0dbbb1aefef3d2e7f363df573";
+            var url = "https://sci-hub.tw/https://api.elsevier.com/content/article/entitlement/doi/" + doi + "?apiKey=" + api;
+            xhr.open('GET', url);
+            xhr.onload = function () {
+                //checks for premission if we have access to this doi
+                if (xhr.status === 200) {
+                    //reads the xml and checks if 'entitled is true'
+                    myXmlReader(xhr);
+                    //adds hover text to doi
+                    addHover();
+                }
+            };
+            xhr.send();
+            function myXmlReader(xml) {
+                var xmlDoc;
+                xmlDoc = xml.responseText.toString();
+                var n = xmlDoc.includes('entitled":true');
+                if (n) {
+                    $("div.doi").addClass("doiAccess");
+                }
+            }
+
+            function addHover() {
+                $("div.doi.doiAccess")[0].setAttribute("title", "You have access to view this document");
+            }
+        }
+    </script>
+</div>
+            </div>
+        
+    
+
+    <footer id="page-footer" class="main-footer"><div class="container">
+            <div class="footer-wrapper">
+                <nav class="content-navigation three-third" role="navigation"><div class="footer-columns">
+                        
+                        <div class="footer-column">
+                            <p>
+                                Powered by <a href="https://sci-hub.tw/http://www.elsevier.com/online-tools/research-intelligence/products-and-services/pure">Pure</a>, <a href="https://sci-hub.tw/http://www.scopus.com/">Scopus</a> &amp; <a href="https://sci-hub.tw/http://www.elsevier.com/online-tools/research-intelligence/products-and-services/elsevier-fingerprint-engine">Elsevier Fingerprint Engine™</a> © 2018 <a href="https://sci-hub.tw/http://www.elsevier.com">Elsevier B.V.</a>
+                            </p>
+
+                            <p>Cookies are used by this site. To decline or learn more, visit our <a href="https://sci-hub.tw/https://pennstate.pure.elsevier.com/en/about/cookies/">Cookies page</a></p>
+                            
+                                <p><a href="https://sci-hub.tw/https://pennstate.pure.elsevier.com/admin/workspace.xhtml">Log in to Pure</a></p>
+                            
+                        </div>
+                        <div class="footer-column">
+                            
+                                <p><a href="https://sci-hub.tw/http://www.psu.edu/web-privacy-statement" target="_blank">Penn State  data protection policy</a></p>
+                            
+                            <p><a href="https://sci-hub.tw/https://pennstate.pure.elsevier.com/en/vpat/" target="_blank">About web accessibility</a></p>
+                        </div>
+
+                            
+                                <div class="footer-column">
+                                    
+                                        
+                                            <p><a href="https://sci-hub.tw/https://pennstate.pure.elsevier.com/en/contact/contact/">Penn State   contact form</a></p>
+                                        
+                                    
+                                    
+                                </div>
+                            
+
+                </div>
+                    </nav>
+</div>
+            </div>
+    </footer><div id="back-to-top" style="display: none;">
+        <a href="https://sci-hub.tw/https://pennstate.pure.elsevier.com/en/publications/defending-return-oriented-programming-based-on-virtualization-tec/javascript://"><i class="icon icon-up-open"></i></a>
+    </div>
+
+    
+    <script src="./Defending return-oriented programming based on virtualization techniques — Penn State_files/embed.js.download"></script><script type="text/javascript" src="./Defending return-oriented programming based on virtualization techniques — Penn State_files/widget-popup.js.download"></script><script type="text/javascript">
+try {(function() {
+window.pageData = {"page":{"businessUnit":"ELS:RP:ST","cmsName":"Pure Portal","environment":"prod","language":"en","loadTime":"211","loadTimestamp":"1534513871253","name":"pure portal:publications:view","noTracking":"false","productName":"PR","type":"CP-CA"},"visitor":{"accountId":"","accountName":"pr:Penn State University","ipAddress":"50.58.192.28","accessType":"pr:ANON_GUEST","loginStatus":"anonymous"},"content":[{"id":"a240a351-1370-486b-87e0-e5684228b05e","title":"Defending return-oriented programming based on virtualization techniques","recordType":"researchoutput"}]};})();} catch(e) {if(console) { console.log(e) } }</script><script type="text/javascript">
+try {(function() {
+if(pageData && pageDataTracker) { pageDataTracker.trackPageLoad(); }})();} catch(e) {if(console) { console.log(e) } }</script>
+</div></main>
+
+		<script type="text/javascript">
+                
+			domReady (injectSciHub);
+                        function injectSciHub()
+                        {
+                            SciHub.suffix = 'arovswmd_';
+                            SciHub.domain = 'sci-hub.tw';
+                            SciHub.framecheck();
+                            window.onbeforeunload = function() { SciHub.wait(); };
+                        }
+                        
+		</script><div id="arovswmd_refresh" onclick="SciHub.retry(&#39;https://pennstate.pure.elsevier.com/en/publications/defending-return-oriented-programming-based-on-virtualization-tec&#39;)" style="display:none">
+                    <p>поменять прокси<br><img src="./Defending return-oriented programming based on virtualization techniques — Penn State_files/retry.png"></p>
+                </div>
+
+		<div id="arovswmd_panel">
+			<div id="arovswmd_logo">Sci-Hub</div>
+			<div id="arovswmd_input">
+				<input id="arovswmd_url" type="text" value="https://pennstate.pure.elsevier.com/en/publications/defending-return-oriented-programming-based-on-virtualization-tec"><p>URL статьи или журнала, или DOI, или строка для поиска</p>
+			</div>
+			<div id="arovswmd_open">▶</div>
+			<div id="arovswmd_wait">
+				<img src="./Defending return-oriented programming based on virtualization techniques — Penn State_files/transfer.gif" align="left"><i>&nbsp;&nbsp;&nbsp;идет загрузка...</i>
+			</div>
+			<div id="arovswmd_tip" style="display:none">Открыто через прокси <b>0</b> из <b>0</b>
+</div>
+			<div id="arovswmd_feedback">
+				<a href="https://sci-hub.tw/donate" target="blank">
+					<span>Помочь проекту</span>
+					<img border="0" src="./Defending return-oriented programming based on virtualization techniques — Penn State_files/feedback.png"></a>
+			</div>
+		</div>
+
+	
+
+</body></html>

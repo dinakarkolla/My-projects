@@ -1,0 +1,161 @@
+/****************************
+* Primary color
+****************************/
+
+/* Backgrounds image */
+#page-header .primary {
+  background-image: url(/skin/headerBackgroundImage/);
+}
+
+@media (min-width: 480px) {
+  #page-header .primary-right-background {
+    background-image: none;
+  }
+}
+
+/* Backgrounds color */
+#page-header .primary,
+#back-to-top .icon,
+ul.search-index li.selected a,
+.pages .currentStep,
+.btn-primary:hover,
+.btn-primary:focus,
+.sub-logo-banner.improvedLayout,
+.about-text.improvedLayout{
+    background-color: #497295;
+}
+
+/* Community Portal Banner */
+.community-portal-banner {
+  background-color: #000000;
+}
+.community-portal-banner a:link, .community-portal-banner a:visited {
+  color: #ffffff;
+}
+
+  /* Colors */
+.button-row > li > a:hover,
+.button-row > li.selected a,
+.content-profile-navigation nav li.selected i.icon,
+.content-profile-navigation nav a:hover i.icon,
+.page-section-header-home-index ul.home-menu li a:hover .icon,
+.page-section-header-home-index ul.home-menu li a:focus .icon,
+.page-section-header-home-index div.secondary li a:hover .icon,
+.page-section-header-home-index div.secondary li a:focus .icon,
+.global-search .search-submit button:hover .icon,
+.global-search .search-filter-toggle a:hover,
+.global-search .search-filter-toggle a.enabled,
+.global-search-wrapper .search-cp-link a:hover .icon,
+.portal-search-results .search-result-top .search-tools > ul li.community-tool i.icon,
+.content-icon-menu ul li a:hover .icon,
+.content-icon-menu ul li a:focus .icon,
+.dropdown-menu strong,
+.dropdown-menu strong {
+    color: #497295;
+}
+
+/* Borders */
+ul.search-index li.selected a:hover,
+.btn-primary,
+#page-header .secondary nav.content-navigation li.selected a,
+#page-header .secondary nav.content-navigation li a:focus
+.content-profile-navigation nav li.selected a {
+    border-color: #497295;
+}
+
+/****************************
+* Primary color (light)
+****************************/
+
+.global-search.focus,
+.search-cp-link a:focus
+{
+    box-shadow: 0 0 5px 0 rgba(110, 171, 224, 0.2);
+}
+
+.concept-badge-large:focus,
+.concept-badge-small:focus{
+  border-color: rgba(110, 171, 224, 0.5);
+
+}
+
+/****************************
+* Link color
+****************************/
+
+/* Backgrounds */
+.dropdown-container > ul .selected > a, .dropdown-container > ul .selected > a:hover, .dropdown-container > ul > .selected > a:focus,
+.inline-trend-graph .bar {
+    background-color: #337ab7;
+
+}
+
+/****************************
+* Link color visited
+****************************/
+
+a:visited {
+  color: #23527c
+}
+
+/****************************
+* Concept search
+****************************/
+.search-concept-result
+{
+  border: 1px solid #497295;
+  background-color: rgba(110, 171, 224, 0.1);
+}
+/* Colors */
+a,
+.btn-primary, .search-concept-result a:visited, .portal_link {
+  color: #337ab7;
+}
+#page-footer{
+  border-top: 2px solid #497295;
+}
+
+li.icon:hover{
+  color: #497295!important;
+
+}
+ul.has-overflow-navigation.li.dropdown{
+  color: #23527c;
+}
+
+
+ul.has-overflow-navigation.li.dropdown{
+  color: #23527c;
+}
+.tooltipped.tooltipped-multiline .icon.icon-info-circled.activate{
+  color: #337ab7;
+}
+/*
+rendering_person_personsocialmediaorcidrendererportal - is here to support backwards compatibility
+*/
+.rendering_person_personsocialmediaorcidrendererportal, .rendering_person_personsocialmediarendererportal {
+  .link:hover{
+    color: #337ab7 !important;
+  }
+}
+.slick-next, .slick-next:before, .slick-prev, .slick-prev:before{
+  color:#337ab7 !important;
+}
+.has-overflow-navigation.improvedLayout li{
+  a:hover{
+    color: #497295!important;
+  }
+}
+.page-section-header-home-index.improvedLayout, .improvedLayout-section .page-section.page-section-home.page-section-home-index.improvedLayout{
+  background-image: url(/skin/headerBackgroundImage/);
+  background-color: #497295;
+}
+ul.improvedLayout-menu li.selected a {
+  border-bottom: solid 2px #497295;
+}
+ul.improvedLayout-menu li.selected a:hover {
+ color:#497295;
+}
+.improvedLayout-colloboration-map .form-field-dropdown.dropdown{
+  border: 2px solid #497295;
+}
